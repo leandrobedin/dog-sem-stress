@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Shield, X, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -39,7 +38,7 @@ const PricingSection = () => {
             <div className="absolute top-0 md:top-6 right-0 md:right-6 glass-card bg-gradient-to-r from-dog-primary to-dog-secondary p-3 md:p-4 rounded-xl transform rotate-3 shadow-lg z-10 mt-12 mr-2 md:mt-0 md:mr-0">
               <div className="text-center">
                 <div className="text-base md:text-lg font-medium mb-1">Apenas</div>
-                <div className="text-3xl md:text-4xl font-bold mb-1">R$27</div>
+                <div className="text-3xl md:text-4xl font-bold mb-1">R$22</div>
                 <div className="text-xs md:text-sm">Pagamento único</div>
               </div>
             </div>
@@ -94,6 +93,11 @@ const PricingSection = () => {
                   O Cão Sem Stress tá fazendo tanto sucesso que adestradores estão ameaçando derrubar o projeto.
                   Se você ainda vê essa página ativa, APROVEITA. Depois pode não voltar.
                 </p>
+              </div>
+              
+              <div className="mb-4 text-center">
+                <span className="text-4xl font-extrabold text-green-600 block mb-2">R$ 22,00</span>
+                <p className="text-lg text-gray-600 mb-4">Oferta imperdível!</p>
               </div>
               
               <button 
