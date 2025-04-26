@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Shield, X, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -90,7 +89,7 @@ const PricingSection = () => {
                 </p>
               </div>
               
-              <Button className="shine-btn w-full sm:w-auto py-5 px-6 md:py-6 md:px-8 text-base md:text-lg rounded-xl animate-pulse-glow overflow-hidden whitespace-normal bg-[#4CAF50] hover:bg-[#45a049]">
+              <Button className="shine-btn w-full sm:w-auto text-base md:text-lg py-4 px-6 md:py-6 md:px-8 rounded-xl animate-pulse-glow bg-green-500 hover:bg-green-600">
                 QUERO O CÃO SEM STRESS™ – R$27 NO PIX
               </Button>
               

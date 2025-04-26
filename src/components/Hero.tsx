@@ -28,27 +28,29 @@ const Hero = () => {
     <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-hero-pattern opacity-20"></div>
       
-      <div className="container px-4 py-16 md:py-24 flex flex-col items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-          <div className="order-2 md:order-1 flex flex-col items-center md:items-start">
+      <div className="container px-4 py-16 md:py-24">
+        <div className="grid grid-cols-1 gap-8 md:gap-16 items-center max-w-5xl mx-auto">
+          <div className="flex flex-col items-center text-center">
             <div className="mb-6 opacity-0 animate-slide-in [animation-delay:0.2s]">
               <span className="inline-block bg-gradient-to-r from-dog-primary to-dog-secondary rounded-full px-4 py-1 text-sm font-medium">
                 🐶 CÃO SEM STRESS™
               </span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center md:text-left opacity-0 animate-slide-in [animation-delay:0.4s]">
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 opacity-0 animate-slide-in [animation-delay:0.4s]">
               Elimine Latidos, Ansiedade e Destruição em <span className="text-gradient">Apenas 7 Dias</span> (Ou Menos)
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-8 text-center md:text-left opacity-0 animate-slide-in [animation-delay:0.6s]">
+            
+            <p className="text-lg md:text-xl text-gray-300 mb-8 opacity-0 animate-slide-in [animation-delay:0.6s] max-w-3xl">
               Um método rápido, simples e direto para transformar seu cachorro descontrolado em um cão calmo e obediente
             </p>
             
-            <div className="w-full flex justify-center md:justify-start opacity-0 animate-slide-in [animation-delay:0.5s] mb-8">
+            <div className="w-full max-w-2xl opacity-0 animate-slide-in [animation-delay:0.5s] mb-8">
               <div className="relative">
                 <img 
                   src="https://i.ibb.co/TM5fQPWF/dog01.png" 
                   alt="Cachorro calmo e equilibrado" 
-                  className="w-full max-w-md rounded-xl shadow-2xl animate-float"
+                  className="w-full rounded-xl shadow-2xl animate-float"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-dog-primary to-dog-secondary p-3 rounded-lg shadow-lg transform rotate-3">
                   <span className="text-lg font-bold">7 Dias de Resultados</span>
@@ -59,7 +61,7 @@ const Hero = () => {
             <div className="mb-8 opacity-0 animate-slide-in [animation-delay:0.8s]">
               <ul className="space-y-4">
                 {["Sem pagar adestradores caros", "Sem usar medicamentos", "Sem precisar sair de casa"].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3">
+                  <li key={index} className="flex items-center gap-3 justify-center">
                     <CheckCircle className="h-5 w-5 text-dog-primary flex-shrink-0" />
                     <span className="text-gray-300 text-base md:text-lg">{item}</span>
                   </li>
@@ -67,17 +69,15 @@ const Hero = () => {
               </ul>
             </div>
             
-            <div className="w-full md:w-auto opacity-0 animate-slide-in [animation-delay:1s]">
+            <div className="w-full opacity-0 animate-slide-in [animation-delay:1s] max-w-md">
               <Button 
-                className="shine-btn w-full md:w-auto text-base py-5 px-6 md:py-6 md:px-8 rounded-xl animate-pulse-glow bg-green-500 hover:bg-green-600 whitespace-normal"
+                className="shine-btn w-full text-base md:text-lg py-4 px-6 md:py-6 md:px-8 rounded-xl animate-pulse-glow bg-green-500 hover:bg-green-600"
                 onClick={scrollToPricing}
               >
                 QUERO TRANSFORMAR MEU CÃO AGORA
               </Button>
             </div>
           </div>
-          
-          {/* Removing the placeholder div that was shown in the image */}
         </div>
       </div>
       
