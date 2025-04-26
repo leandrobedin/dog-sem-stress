@@ -19,6 +19,12 @@ const PricingSection = () => {
     document.getElementById('pricing')?.scrollIntoView({behavior: 'smooth'});
   };
 
+  const checkoutLink = "https://www.ggcheckout.com/checkout/oagy8s9SLfJD7xjy1Xb9";
+  
+  const handlePurchase = () => {
+    window.open(checkoutLink, '_blank');
+  };
+
   return (
     <section id="pricing" className="w-full py-16 md:py-24 bg-dog-darkAlt">
       <div className="section-wrapper">
@@ -89,8 +95,11 @@ const PricingSection = () => {
                 </p>
               </div>
               
-              <Button className="shine-btn w-full sm:w-auto text-base md:text-lg py-4 px-6 md:py-6 md:px-8 rounded-xl animate-pulse-glow bg-green-500 hover:bg-green-600">
-                QUERO O CÃO SEM STRESS™ – R$27 NO PIX
+              <Button 
+                className="shine-btn w-full sm:w-auto text-base md:text-lg py-4 px-6 md:py-6 md:px-8 rounded-xl animate-pulse-glow bg-green-500 hover:bg-green-600"
+                onClick={handlePurchase}
+              >
+                QUERO COMPRAR O CÃO SEM STRESS!
               </Button>
               
               <div className="mt-6 flex flex-wrap justify-center gap-4 md:gap-6">
