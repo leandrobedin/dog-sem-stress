@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Shield, X, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -95,12 +96,12 @@ const PricingSection = () => {
                 </p>
               </div>
               
-              <Button 
-                className="shine-btn w-full sm:w-auto text-base md:text-lg py-4 px-6 md:py-6 md:px-8 rounded-xl animate-pulse-glow bg-green-500 hover:bg-green-600"
+              <button 
                 onClick={handlePurchase}
+                className="w-full sm:w-auto py-4 px-6 md:py-6 md:px-8 text-base md:text-lg font-bold bg-green-500 hover:bg-green-600 text-white rounded-xl shadow-lg transition-all duration-300"
               >
                 QUERO COMPRAR O CÃO SEM STRESS!
-              </Button>
+              </button>
               
               <div className="mt-6 flex flex-wrap justify-center gap-4 md:gap-6">
                 <div className="flex items-center">
